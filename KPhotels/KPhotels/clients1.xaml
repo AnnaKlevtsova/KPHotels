@@ -1,0 +1,59 @@
+﻿<Page x:Class="KPhotels.clients1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KPhotels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="clients1"
+      x:Name="page">
+
+    <Grid Background="White">
+        <ListBox x:Name="listbox" Margin="30,46,30,10" VirtualizingPanel.ScrollUnit="Pixel" MouseDoubleClick="listbox_MouseDoubleClick">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="350" />
+                            <ColumnDefinition Width="*"  />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                        </Grid.RowDefinitions>
+                        <Image Source="{Binding Image}" Grid.Column="0" Grid.RowSpan="9" Width="500" Height="300"></Image>
+                        <Label Content="{Binding Name}"  Grid.Column="1" Grid.Row="1" FontWeight="Bold"></Label>
+                        <Label Content="{Binding Address}" ContentStringFormat="Адрес: {0}" Grid.Column="1" Grid.Row="2"></Label>
+                        <Label Content="{Binding Director}"  ContentStringFormat="Директор: {0}" Grid.Column="1" Grid.Row="3"></Label>
+                        <Label Content="{Binding Stars}" ContentStringFormat="Звезды: {0}"  Grid.Column="1" Grid.Row="4"></Label>
+                        <Label Content="{Binding Numberz}" ContentStringFormat="Всего номеров: {0}"  Grid.Column="1" Grid.Row="5"></Label>
+                        <Label Content="{Binding Numbers}" ContentStringFormat="Свободные номера: {0}"  Grid.Column="1" Grid.Row="6"></Label>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBox x:Name="TextBoxSearch" HorizontalAlignment="Left" Height="27" Margin="218,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211">
+            <ToolTipService.ToolTip>
+                <ToolTip Content="Введите название гостиницы" />
+            </ToolTipService.ToolTip>
+        </TextBox>
+        <Button Content="Найти" HorizontalAlignment="Left" Height="27" Margin="434,14,0,0" VerticalAlignment="Top" Width="70" Click="Button_Click" RenderTransformOrigin="0.007,0.544"/>
+        <ComboBox x:Name="filter" HorizontalAlignment="Left" Height="27" Margin="531,14,0,0" VerticalAlignment="Top" Width="124">
+            <TextBlock>5 звезд</TextBlock>
+            <TextBlock>4 звезды</TextBlock>
+            <TextBlock>3 звезды</TextBlock>
+            <TextBlock>2 звезды</TextBlock>
+            <TextBlock>1 звезда</TextBlock>
+            <TextBlock>Показать все</TextBlock>
+        </ComboBox>
+        <Button Content="Фильтровать" HorizontalAlignment="Left" Height="28" Margin="660,13,0,0" VerticalAlignment="Top" Width="84" RenderTransformOrigin="0.255,0.317" Click="Button_Click_1"/>
+    </Grid>
+</Page>

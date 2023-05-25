@@ -1,0 +1,25 @@
+﻿<Page x:Class="KPhotels.administration1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KPhotels"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800"
+      Title="administration1">
+
+
+    <Grid Background="White">
+        <TextBox x:Name="login" HorizontalAlignment="Left" Height="32" Margin="278,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208"/>
+        <TextBox x:Name="parol" HorizontalAlignment="Left" Height="34" Margin="278,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" Visibility="Hidden"/>
+        <Button Content="Войти" HorizontalAlignment="Left" Height="42" Margin="278,264,0,0" VerticalAlignment="Top" Width="208" Click="Button_Click" />
+        <Label Content="Введите логин" HorizontalAlignment="Left" Height="38" Margin="278,64,0,0" VerticalAlignment="Top" Width="208"/>
+        <Label Content="Введите пароль" HorizontalAlignment="Left" Height="38" Margin="278,159,0,0" VerticalAlignment="Top" Width="208"/>
+        <PasswordBox x:Name="passwordbox" HorizontalAlignment="Left" Height="31" Margin="278,202,0,0" VerticalAlignment="Top" Width="208"/>
+        <CheckBox x:Name="checkBox" Content="Показать пароль" HorizontalAlignment="Left" Height="20" Margin="278,238,0,0" VerticalAlignment="Top" Width="132" Click="checkBox_Click"/>
+        <Label Content=" или" HorizontalAlignment="Left" Height="28" Margin="363,311,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="1.395,0.536"/>
+        <Button Content="Зарегистрироваться" HorizontalAlignment="Left" Height="42" Margin="278,344,0,0" VerticalAlignment="Top" Width="208" Click="Button_Click_2"/>
+        <Label Content="Вход" HorizontalAlignment="Left" Height="55" Margin="335,-4,0,0" VerticalAlignment="Top" Width="94" FontSize="36"/>
+    </Grid>
+
+</Page>

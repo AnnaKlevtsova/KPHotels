@@ -1,0 +1,24 @@
+﻿<Window x:Class="KPhotels.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KPhotels"
+        mc:Ignorable="d"
+        Title="Резервирование гостиничных мест" Height="650" Width="800">
+    <Grid Background="#FFB8B8B8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Frame Name="MainFrame" ContentRendered="Button_Exit"  Background= "White" NavigationUIVisibility="Hidden" Grid.Row="1"/>
+        <Button x:Name="ButtonExit" Content="Выход" HorizontalAlignment="Left" Height="38" Margin="711,0,0,0" VerticalAlignment="Center" Width="79" Click="Button_Click_1"/>
+
+        <Label Content="Резервирование гостиничных мест" HorizontalAlignment="Left" Height="65" Margin="94,0,0,0" VerticalAlignment="Center" Width="629" FontSize="36"/>
+        <Image HorizontalAlignment="Left" Height="68" Margin="10,5,0,0" VerticalAlignment="Top" Width="72" Source="/логотип.jpg" RenderTransformOrigin="0.91,0.561"/>
+    </Grid>
+
+
+
+</Window>

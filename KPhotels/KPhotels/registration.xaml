@@ -1,0 +1,34 @@
+﻿<Page x:Class="KPhotels.registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:KPhotels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="registration">
+
+    <Grid Background="White">
+        <TextBox x:Name="TextBoxName" HorizontalAlignment="Center" Height="26" Margin="0,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244" RenderTransformOrigin="0.511,0.042"/>
+        <Label Content="Введите имя" HorizontalAlignment="Left" Height="30" Margin="94,68,0,0" VerticalAlignment="Top" Width="147"/>
+        <Label Content="Регистрация" HorizontalAlignment="Center" Height="56" Margin="0,-4,0,0" VerticalAlignment="Top" Width="214" FontSize="36"/>
+        <TextBox x:Name="TextBoxSurname" HorizontalAlignment="Center" Height="26" Margin="0,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <TextBox x:Name="TextBoxPatronymic" HorizontalAlignment="Center" Height="26" Margin="0,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <TextBox x:Name="TextBoxNumberPassport" HorizontalAlignment="Center" Height="26" Margin="0,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <Label Content="Введите фамилию" HorizontalAlignment="Left" Height="30" Margin="94,99,0,0" VerticalAlignment="Top" Width="147"/>
+        <Label Content="Введите отчество" HorizontalAlignment="Left" Height="30" Margin="94,130,0,0" VerticalAlignment="Top" Width="147"/>
+        <Label Content="Введите номер паспорта&#xD;&#xA;(8 цифр)" HorizontalAlignment="Left" Height="50" Margin="94,158,0,0" VerticalAlignment="Top" Width="147"/>
+        <RadioButton x:Name="radiobuttonman" Content="Мужской" HorizontalAlignment="Left" Height="22" Margin="293,209,0,0" VerticalAlignment="Top" Width="102" Checked="radiobuttonman_Checked"/>
+        <RadioButton x:Name="radiobuttonwoman" Content="Женский" HorizontalAlignment="Left" Height="22" Margin="400,209,0,0" VerticalAlignment="Top" Width="107" Checked="radiobuttonwoman_Checked"/>
+        <Label Content="Введите логин" HorizontalAlignment="Left" Height="30" Margin="94,238,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TextBoxLogin" HorizontalAlignment="Center" Height="26" Margin="0,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <Label Content="Введите пароль (8 символов)" HorizontalAlignment="Left" Height="31" Margin="94,268,0,0" VerticalAlignment="Top" Width="172"/>
+        <TextBox x:Name="TextBoxPassword" HorizontalAlignment="Center" Height="26" Margin="0,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <Label Content="Повторите пароль&#xD;&#xA;(8 символов)" HorizontalAlignment="Left" Height="48" Margin="94,294,0,0" VerticalAlignment="Top" Width="166"/>
+        <TextBox x:Name="TextBoxPasswordCheck" HorizontalAlignment="Center" Height="26" Margin="0,306,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="244"/>
+        <Label Content="Выберите Ваш пол" HorizontalAlignment="Left" Height="30" Margin="94,201,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Зарегистрироваться" HorizontalAlignment="Center" Height="38" Margin="0,349,0,0" VerticalAlignment="Top" Width="200" Click="Button_Click"/>
+        <PasswordBox x:Name="PasswordBoxPassword" HorizontalAlignment="Center" Height="28" Margin="0,271,0,0" VerticalAlignment="Top" Width="244"/>
+        <PasswordBox x:Name="PasswordBoxPasswordCheck" HorizontalAlignment="Center" Height="28" Margin="0,304,0,0" VerticalAlignment="Top" Width="244"/>
+    </Grid>
+</Page>
